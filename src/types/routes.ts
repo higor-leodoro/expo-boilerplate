@@ -1,4 +1,4 @@
-export type RootRoutesParamsList = {
+export type RoutesParamsList = {
  Home: undefined;
  SignIn: undefined;
 };

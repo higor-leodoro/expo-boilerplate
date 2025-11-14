@@ -1,7 +1,9 @@
-import { useAuthStore } from "@/stores";
-import { SafeAreaView, Text, TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-export default function SignIn() {
+import { useAuthStore } from "@/stores";
+
+export const SignIn = () => {
  const { signIn } = useAuthStore();
  return (
   <SafeAreaView className="bg-black justify-center items-center flex-1">
@@ -10,4 +12,4 @@ export default function SignIn() {
    </TouchableOpacity>
   </SafeAreaView>
  );
-}
+};
